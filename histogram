@@ -2,3 +2,8 @@ b, g, r = cv2.split(image)
 
 plt.hist(r.ravel(), 256, [0, 256])
 cv2.imshow("object detection", r)
+
+/* b, g, r = cv2.split(frame)
+
+plt.hist(r.ravel(), 256, [0, 256])
+cv2.imshow("object detection", r)

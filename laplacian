@@ -1,0 +1,6 @@
+laplacian = cv2.Laplacian(image, cv2.CV_64F)
+cv2.imshow("pencere", laplacian)
+
+
+/* laplacian = cv2.Laplacian(frame, cv2.CV_64F)
+cv2.imshow("pencere", laplacian) */

@@ -1,0 +1,11 @@
+sobel_x = cv2.Sobel(image, cv2.CV_64F, 1, 0, ksize=5)
+sobel_y = cv2.Sobel(image, cv2.CV_64F, 0, 1, ksize=9)
+edges_sobel = np.hypot(sobel_x, sobel_y)
+edges_sobel *= 700.0 / np.max(edges_sobel)
+cv2.imshow("pencere", edges_sobel)
+
+/* sobel_x = cv2.Sobel(frame, cv2.CV_64F, 1, 0, ksize=7)
+sobel_y = cv2.Sobel(frame, cv2.CV_64F, 0, 1, ksize=9)
+edges_sobel = np.hypot(sobel_x, sobel_y)
+edges_sobel *= 700.0 / np.max(edges_sobel)
+cv2.imshow("pencere", edges_sobel)   */
